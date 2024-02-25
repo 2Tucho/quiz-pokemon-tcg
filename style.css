@@ -1,0 +1,117 @@
+:root {
+    --tea-rose-red: #e2c2c6ff;
+    --rosy-brown: #b9929fff;
+    --plum: #9c528bff;
+    --indigo: #610f7fff;
+    --russian-violet: #2f0147ff;
+}
+
+* {
+    font-family: 'Titillium Web';
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 110vh;
+    padding-bottom: 140px;
+    font-size: 1.4rem;
+    border: 0;
+}
+
+label,
+legend {
+    height: 20vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+legend {
+    background-color: var(--tea-rose-red);
+}
+
+label {
+    color: white;
+}
+
+input {
+    display: none;
+}
+
+label:first-of-type {
+    background-color: var(--rosy-brown);
+}
+
+label:nth-of-type(2) {
+    background-color: var(--plum);
+}
+
+label:nth-of-type(3) {
+    background-color: var(--indigo);
+}
+
+label:last-of-type {
+    background-color: var(--russian-violet);
+}
+
+/* Ids */
+#botonEnviar {
+    width: 50%;
+    height: 60%;
+    background-color: whitesmoke;
+    margin-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        height: 110vh;
+        padding-bottom: 140px;
+        font-size: 1.4rem;
+        border: 0;
+        justify-content: space-evenly;
+    }
+
+    label,
+    legend {
+        height: 30%;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        margin-right: 40px;
+    }
+}
