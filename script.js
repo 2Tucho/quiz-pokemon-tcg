@@ -47,7 +47,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // Comprobar si la respuesta seleccionada es la correcta o no
     if (respuestaPregunta1 == respuestasCorrectas.primerRey) {
-        
+        console.log("Has acertado!")
     } else {
         console.log("Fallaste...")
     }
