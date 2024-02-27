@@ -104,34 +104,57 @@ input {
     display: none;
 }
 
-label:first-of-type {
-    background-color: var(--rosy-brown);
-}
 
-label:nth-of-type(2) {
-    background-color: var(--plum);
-}
-
-label:nth-of-type(3) {
-    background-color: var(--indigo);
-}
-
-label:last-of-type {
-    background-color: var(--russian-violet);
-}
 
 /* Ids */
 #botonEnviar {
     width: 75%;
-    height: 4rem;
 }
 
-@media screen and (min-width: 700px) {
-    #botonEnviar {
-        width: 50%;
-        height: 4rem;
+#div1 > label:first-of-type {
+    background-color: var(--rosy-brown);
+}
+
+#div2 > label:first-of-type {
+    background-color: var(--plum);
+}
+
+#div1 > label:last-of-type {
+    background-color: var(--indigo);
+}
+
+#div2 > label:last-of-type {
+    background-color: var(--russian-violet);
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 235%;
+        margin-top: 50px;
+        border: 1px solid black;
+    }
+    
+    p {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 2.2rem;
+    }
+    
+    button {
+        width: 60%;
+        height: 5rem;
         background-color: whitesmoke;
         margin-bottom: 70px;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
+
+    button > a {
+        font-size: 1.6rem;
+    }
+
+    #botonEnviar {
+        width: 75%;
+        
+    }
+    
 }
