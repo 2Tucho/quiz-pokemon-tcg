@@ -1,4 +1,4 @@
-document.querySelector("button").setAttribute("id", "botonEnviar")
+document.querySelectorAll("button"[0]).setAttribute("id", "botonEnviar")
 
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault(); // paraliza envío formulario
@@ -49,7 +49,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // Comprobar si la respuesta seleccionada es la correcta o no
     if (respuestaPregunta1 == respuestasCorrectas.primerRey) {
-        console.log("Has acertado!")
+        
     } else {
         console.log("Fallaste...")
     }
