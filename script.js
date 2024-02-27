@@ -1,5 +1,3 @@
-document.querySelectorAll("button"[0]).setAttribute("id", "botonEnviar")
-
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault(); // paraliza envío formulario
 
