@@ -12,9 +12,8 @@
     padding: 0;
 }
 
-/* Elementos */
+/* index */
 main {
-    width: 100%;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -31,7 +30,7 @@ h1 {
     font-size: 4rem;
 }
 
-main > section {
+main>section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,13 +48,12 @@ p {
 }
 
 button {
-    width: 50%;
-    height: 3.4rem;
+    padding: 10px 10px;
     background-color: whitesmoke;
     margin-bottom: 70px;
 }
 
-button > a {
+button>a {
     text-decoration: none;
     color: black;
     font-family: 'Titillium Web';
@@ -63,6 +61,7 @@ button > a {
     font-size: large;
 }
 
+/* quiz */
 form {
     display: flex;
     flex-direction: column;
@@ -75,29 +74,29 @@ fieldset {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    height: 110vh;
-    padding-bottom: 140px;
+    padding-bottom: 170px;
     font-size: 1.4rem;
     border: 0;
 }
 
-label,
 legend {
-    height: 20vh;
-    width: 100vw;
+    width: 90vw;
+    padding: 55px 20px;
+    background-color: var(--tea-rose-red);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px;
+    font-size: 1.5rem;
 }
 
-legend {
-    background-color: var(--tea-rose-red);
+div {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
     color: white;
+    width: 90vw;
+    padding: 55px 20px;
+    text-align: center;
 }
 
 input {
@@ -108,53 +107,21 @@ input {
 
 /* Ids */
 #botonEnviar {
-    width: 75%;
+    
 }
 
-#div1 > label:first-of-type {
+.div1>label:first-of-type {
     background-color: var(--rosy-brown);
 }
 
-#div2 > label:first-of-type {
+.div2>label:first-of-type {
     background-color: var(--plum);
 }
 
-#div1 > label:last-of-type {
+.div1>label:last-of-type {
     background-color: var(--indigo);
 }
 
-#div2 > label:last-of-type {
+.div2>label:last-of-type {
     background-color: var(--russian-violet);
-}
-
-@media screen and (min-width: 768px) {
-    img {
-        width: 235%;
-        margin-top: 50px;
-        border: 1px solid black;
-    }
-    
-    p {
-        padding-top: 50px;
-        padding-bottom: 20px;
-        font-size: 2.2rem;
-    }
-    
-    button {
-        width: 60%;
-        height: 5rem;
-        background-color: whitesmoke;
-        margin-bottom: 70px;
-        font-size: 1.8rem;
-    }
-
-    button > a {
-        font-size: 1.6rem;
-    }
-
-    #botonEnviar {
-        width: 75%;
-        
-    }
-    
 }
