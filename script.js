@@ -48,32 +48,33 @@ document.querySelector("form").addEventListener("submit", function (event) {
     if (respuestaPregunta1 == respuestasCorrectas.primerRey) {
         document.getElementById("ereborFieldset").style.backgroundColor = "green";
     } else {
-        document.getElementById("ereborFieldset").style.backgroundColor = "red"
+        document.getElementById("ereborFieldset").style.backgroundColor = "red";
+        //document.getElementsByClassName(label.className).style.color = "white"
     }
     //Que me ponga texto de que est'a bien abajo, o de que est'a mal
 
     if (respuestaPregunta2 == respuestasCorrectas.numeroEnanos) {
         document.getElementById("enanosFieldset").style.backgroundColor = "green";
     } else {
-        document.getElementById("enanosFieldset").style.backgroundColor = "red"
+        document.getElementById("enanosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta3 == respuestasCorrectas.motivoAyuda) {
         document.getElementById("motivosFieldset").style.backgroundColor = "green";
     } else {
-        document.getElementById("motivosFieldset").style.backgroundColor = "red"
+        document.getElementById("motivosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta4 == respuestasCorrectas.ejercitosParticipantes) {
         document.getElementById("ejercitosFieldset").style.backgroundColor = "green";
     } else {
-        document.getElementById("ejercitosFieldset").style.backgroundColor = "red"
+        document.getElementById("ejercitosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta5 == respuestasCorrectas.nombreBosque) {
         document.getElementById("bosqueFieldset").style.backgroundColor = "green";
     } else {
-        document.getElementById("bosqueFieldset").style.backgroundColor = "red"
+        document.getElementById("bosqueFieldset").style.backgroundColor = "red";
     }
 
     // Comprobación final
@@ -90,7 +91,7 @@ function selectLabel(label) {
         let element = allLabels[i];
         if (element !== label) {
             element.style.color = "white";
-        }    
+        }
     }
     label.style.color = "yellow";
 }

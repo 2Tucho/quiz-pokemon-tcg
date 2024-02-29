@@ -12,6 +12,7 @@
     padding: 0;
 }
 
+/* MOVIL */
 /* index */
 main {
     display: flex;
@@ -27,7 +28,7 @@ main {
 
 h1 {
     margin-top: 40px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 main>section {
@@ -45,6 +46,7 @@ img {
 p {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 button {
@@ -103,13 +105,7 @@ input {
     display: none;
 }
 
-
-
-/* Ids */
-#botonEnviar {
-    
-}
-
+/* Clases */
 .div1>label:first-of-type {
     background-color: var(--rosy-brown);
 }
@@ -124,4 +120,122 @@ input {
 
 .div2>label:last-of-type {
     background-color: var(--russian-violet);
+}
+
+/* Ids */
+#botonEnviar {
+    padding: 20px 70px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+/* TABLETA */
+@media screen and (min-width: 768px) {
+
+    /* index */
+    h1 {
+        margin-top: 70px;
+        font-size: 6rem;
+    }
+
+    img {
+        width: 225%;
+        margin-top: 70px;
+    }
+
+    p {
+        padding-top: 70px;
+        padding-bottom: 45px;
+        font-size: 2.2rem;
+    }
+
+    button {
+        padding: 30px 70px;
+        margin-bottom: 80px;
+    }
+
+    button>a {
+        font-size: 2rem;
+    }
+
+    /* quiz */
+    fieldset {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-bottom: 80px;
+        width: 100vw;
+    }
+
+    legend {
+        width: 90vw;
+        background-color: var(--tea-rose-red);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    label {
+        width: auto;
+        padding: 1em 6em;
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+    }
+
+    #botonEnviar {
+        padding: 40px 130px;
+        margin-bottom: 80px;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    /* index */
+    h1 {
+        margin-top: 40px;
+        font-size: 5rem;
+    }
+
+    img {
+        width: 175%;
+        margin-top: 45px;
+    }
+
+    p {
+        padding-top: 45px;
+        padding-bottom: 35px;
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 20px 60px;
+        margin-bottom: 80px;
+    }
+
+    button>a {
+        font-size: 1.8rem;
+    }
+
+    /* quiz */
+    legend {
+        width: 50vw;
+        background-color: var(--tea-rose-red);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    div {
+        display: flex;
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+    }
 }
