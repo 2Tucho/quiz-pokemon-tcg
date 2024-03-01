@@ -1,2 +1,2 @@
-# quiz-pokemon-tcg
-Cuestionario de 10 preguntas hecho con HTML, CSS y JS
+# quiz-the-hobbit
+Cuestionario de 5 preguntas hecho con HTML, CSS y JS
