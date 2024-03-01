@@ -8,7 +8,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     const respuestaPregunta4 = event.target.ejercitosParticipantes.value;
     const respuestaPregunta5 = event.target.nombreBosque.value;
 
-    console.log(respuestaPregunta1, respuestaPregunta2, respuestaPregunta3, respuestaPregunta4, respuestaPregunta5)
+    console.log("--------------------------")
 
     // Respuestas correctas
     const respuestasCorrectas = {
@@ -18,7 +18,6 @@ document.querySelector("form").addEventListener("submit", function (event) {
         ejercitosParticipantes: "cambiapielesCarroca",
         nombreBosque: "bosqueNegro"
     }
-
 
     let errores = "";
 
@@ -47,33 +46,35 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // Comprobar si la respuesta seleccionada es la correcta o no
     if (respuestaPregunta1 == respuestasCorrectas.primerRey) {
-        
+        document.getElementById("ereborFieldset").style.backgroundColor = "green";
     } else {
-        console.log("Fallaste...")
+        document.getElementById("ereborFieldset").style.backgroundColor = "red";
+        //document.getElementsByClassName(label.className).style.color = "white"
     }
+    //Que me ponga texto de que est'a bien abajo, o de que est'a mal
 
     if (respuestaPregunta2 == respuestasCorrectas.numeroEnanos) {
-        console.log("Has acertado!")
+        document.getElementById("enanosFieldset").style.backgroundColor = "green";
     } else {
-        console.log("Fallaste...")
+        document.getElementById("enanosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta3 == respuestasCorrectas.motivoAyuda) {
-        console.log("Has acertado!")
+        document.getElementById("motivosFieldset").style.backgroundColor = "green";
     } else {
-        console.log("Fallaste...")
+        document.getElementById("motivosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta4 == respuestasCorrectas.ejercitosParticipantes) {
-        console.log("Has acertado!")
+        document.getElementById("ejercitosFieldset").style.backgroundColor = "green";
     } else {
-        console.log("Fallaste...")
+        document.getElementById("ejercitosFieldset").style.backgroundColor = "red";
     }
 
     if (respuestaPregunta5 == respuestasCorrectas.nombreBosque) {
-        console.log("Has acertado!")
+        document.getElementById("bosqueFieldset").style.backgroundColor = "green";
     } else {
-        console.log("Fallaste...")
+        document.getElementById("bosqueFieldset").style.backgroundColor = "red";
     }
 
     // Comprobación final
@@ -83,3 +84,14 @@ document.querySelector("form").addEventListener("submit", function (event) {
     }
     else document.ResultadoForm = true;
 });
+
+function selectLabel(label) {
+    let allLabels = document.getElementsByClassName(label.className);
+    for (let i = 0; i < allLabels.length; i++) {
+        let element = allLabels[i];
+        if (element !== label) {
+            element.style.color = "white";
+        }
+    }
+    label.style.color = "yellow";
+}
